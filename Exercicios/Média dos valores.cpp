@@ -5,7 +5,7 @@ int main(int argc, char *argv[]){
 	
 	setlocale(LC_ALL, "Portuguese");
 	
-	int n1, n2, n3, n4, s;
+	int n1, n2, n3, n4, s, m;
 	
 	printf("Informe o primeiro número:\n");
 	scanf("%d", &n1);
@@ -18,7 +18,10 @@ int main(int argc, char *argv[]){
 	
 	s = n1 + n2 + n3 + n4;
 	
-	printf("Soma dos valores: %d", s);
+	m = n1 + n2 + n3 + n4 / 4;
+	
+	printf("Soma dos valores: %d\n", s);
+	printf("Média aritmética simples: %d\n", m);
 	
 	return 0;
 }
