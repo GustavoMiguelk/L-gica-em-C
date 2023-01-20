@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -22,34 +21,22 @@ int main(){
 	printf("Insira o segundo número:\n");
 	scanf("%f", &n2);
 	
-	switch(op){
-		case 1:
-			res = n1 + n2;
-			printf("Soma: %.2f.\n", res);
-			break;
-		case 2:
+	if(op == 1){
+		res = n1 + n2;
+	} else {
+		if(op == 2){
 			res = n1 - n2;
-			printf("Subtração: %.2f.\n", res);
-			break;
-		case 3:
-			res = n1 * n2;
-			printf("Multiplicação: %.2f.\n", res);
-			break;
-		case 4:
-			if(n2 !=0){
-				res = n1 / n2;
-				printf("Divisão: %.2f.\n", res);
+		} else {
+			if(op == 3){
+				res = n1 * n2;
 			} else {
-				if(n2 == 0){
-					printf("Divisão por zero");
-				}
+				if(op == 4){
+					res = n1 / n2;
+				}	
 			}
+		}
 	}
 	
+	printf("O Resultado é: %.2f\n", res);
 	
-	}
-	
-	
-	
-	
-
+}

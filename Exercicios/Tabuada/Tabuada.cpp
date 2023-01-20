@@ -8,7 +8,7 @@ int main(){
 		
 	int n1, i;
 	
-	printf("Digite um valor:\n");
+	printf("Digite um número:\n");
 	scanf("%d", &n1);
 	
 	for(i = 1; i<= 10; i++){
